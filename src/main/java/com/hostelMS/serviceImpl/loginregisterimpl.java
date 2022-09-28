@@ -10,7 +10,9 @@ import com.hostelMS.dao.hostelMSDao;
 import com.hostelMS.daoImpl.hostelMSDaoImpl;
 import com.hostelMS.exception.GlobalException;
 import com.hostelMS.model.user;
+import com.hostelMS.service.admindashboard;
 import com.hostelMS.service.loginregister;
+import com.hostelMS.service.userdashboard;
 
 public class loginregisterimpl implements loginregister {
 	static Logger log=Logger.getLogger(App.class);
@@ -62,9 +64,20 @@ public class loginregisterimpl implements loginregister {
 		String username=bs.next();
 		log.info("Enter password");
 		String password=bs.next();
+		//checking login
 		user u1=dao.login(username, password);
+		//success message
 		log.info("Hello"+u1.getUserName()+"Login Success");
-	
+		userdashboard udl=new userdashboardImpl();
+		admindashboard adl=new admindashboardImpl();
+		//if userrole is student userdashboard will open
+		//if userrole is admin admindashboard will open
+		if(u1.getUserRole().equals("student")) {
+			udl.dashboard(u1.getUserId());
+		}
+		else if(u1.getUserRole().equals("admin")) {
+			adl.dashboard();
+		}
 	}
 
 }
