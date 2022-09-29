@@ -33,7 +33,8 @@ public class adminDaoImpl implements adminDao {
 		
 		try(Session ses=HibernateUtil.getSession()){
 			//getting rows of a room table
-			Query qu=ses.createQuery("from user");
+			String student="student";
+			Query qu=ses.createQuery("from user where userRole=:student").setParameter("student", student);
 			List<user> userList=qu.getResultList();
 			return userList;
 		}
@@ -73,8 +74,9 @@ public class adminDaoImpl implements adminDao {
 		
 		try(Session ses=HibernateUtil.getSession())
 		{
-			
+			ses.beginTransaction();
 			int status=ses.createQuery("update user set userRoom_roomId=:rId where userId=:uId").setParameter("rId", rId).setParameter("uId", uId).executeUpdate();
+			ses.getTransaction().commit();
 			return status;
 			
 		}
@@ -87,7 +89,9 @@ public class adminDaoImpl implements adminDao {
 		
 		try(Session ses=HibernateUtil.getSession())
 		{
+			ses.beginTransaction();
 			int status= ses.createQuery("delete from user where userId=:uId").setParameter("uId", uId).executeUpdate();
+			ses.getTransaction().commit();
 			return status;
 		}		
 		
@@ -96,7 +100,7 @@ public class adminDaoImpl implements adminDao {
 
 	//retrive the students who are in one room
 	@Override
-	public List<user> userInARoom(room rId) {
+	public List<user> userInARoom(int rId) {
 		
 		try(Session ses=HibernateUtil.getSession()){
 			
@@ -112,11 +116,12 @@ public class adminDaoImpl implements adminDao {
 	@Override
 	public int addDueAmount(int uId, int amount) {
 		try(Session ses=HibernateUtil.getSession()){
+			ses.beginTransaction();
 			int dueamount=(int)ses.createQuery("select userFee from user where userId=:uId").setParameter("uId",uId).uniqueResult();
 		
 			dueamount+=amount;
 			int status=ses.createQuery("update user set userFee=:dueamount where userId=:uId").setParameter("dueamount", dueamount).setParameter("uId", uId).executeUpdate();
-			
+			ses.getTransaction().commit();
 			return status;
 		}
 	}
@@ -125,12 +130,26 @@ public class adminDaoImpl implements adminDao {
 	@Override
 	public int paidDueAmount(int uId, int amount) {
 		try(Session ses=HibernateUtil.getSession()){
+			ses.beginTransaction();
 			int dueamount=(int)ses.createQuery("select userFee from user where userId=:uId").setParameter("uId",uId).uniqueResult();
 		
 			dueamount-=amount;
 			int status=ses.createQuery("update user set userFee=:dueamount where userId=:uId").setParameter("dueamount", dueamount).setParameter("uId", uId).executeUpdate();
+			ses.getTransaction().commit();
 			return status;
 		}
+	}
+
+
+	@Override
+	public user viewuserprofile(int uId) throws GlobalException {
+		try(Session ses=HibernateUtil.getSession()){
+			
+			user u1=ses.get(user.class, uId);
+			return u1;
+		}
+		
+		
 	}
 
 }

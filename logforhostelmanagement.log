@@ -15,19 +15,383 @@ Press 2 for Login
   [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
   [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
   [main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3f1ef9d6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-  [main] INFO  com.hostelMS.App  - HellobhaskaraLogin Success
-  [main] INFO  com.hostelMS.serviceImpl.userdashboardImpl  - 			---------------------Welcome to userdashboard----------------------
-  [main] INFO  com.hostelMS.serviceImpl.userdashboardImpl  - 
-Press 1 for viewRoom
-Press 2 for view dueAmount 
-Press 3 for view profile
-Press 4 for Update Phone number 
-Press 5 for Change password
-  [main] INFO  com.hostelMS.serviceImpl.userdashboardImpl  - Hello bhaskara your room number is101 room name is Seshadri and it is AC room
-  [main] INFO  com.hostelMS.serviceImpl.userdashboardImpl  - 
-Press 1 for viewRoom
-Press 2 for view dueAmount 
-Press 3 for view profile
-Press 4 for Update Phone number 
-Press 5 for Change password
+  [main] INFO  com.hostelMS.App  - HelloadminbsLogin Success
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 			-------------------welcome to Admin dashboard----------------
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 
+Press 1 for View Rooms		Press 2 for View Users
+Press 3 for Create Rooms		4.Allot room to user
+Press 5 for view user in a room		Press 6 for delete user
+Press 7 for Add Due Amount		Press 8 for Pay Due Amount
+  [main] INFO  com.hostelMS.App  - 					---------Hostel Management System----------
+  [main] INFO  com.hostelMS.App  - 
+Press 1 for Registeration
+Press 2 for Login
+  [main] INFO  com.hostelMS.App  - welcome to Login
+  [main] INFO  com.hostelMS.App  - Enter username
+  [main] INFO  com.hostelMS.App  - Enter password
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.Version  - HHH000412: Hibernate ORM core version 5.6.11.Final
+  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+  [main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hostelMS]
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, user=root}
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+  [main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3f1ef9d6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+  [main] INFO  com.hostelMS.App  - HelloadminbsLogin Success
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 			-------------------welcome to Admin dashboard----------------
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 
+Press 1 for View Rooms		Press 2 for View Users
+Press 3 for Create Rooms		Press 4 for Allot room to user
+Press 5 for view user in a room		Press 6 for delete user
+Press 7 for Add Due Amount		Press 8 for Pay Due Amount
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - room num		roomName		roomType
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 101		Seshadri		AC
+  [main] INFO  com.hostelMS.App  - 					---------Hostel Management System----------
+  [main] INFO  com.hostelMS.App  - 
+Press 1 for Registeration
+Press 2 for Login
+  [main] INFO  com.hostelMS.App  - welcome to Login
+  [main] INFO  com.hostelMS.App  - Enter username
+  [main] INFO  com.hostelMS.App  - Enter password
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.Version  - HHH000412: Hibernate ORM core version 5.6.11.Final
+  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+  [main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hostelMS]
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, user=root}
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+  [main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3f1ef9d6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+  [main] INFO  com.hostelMS.App  - HelloadminbsLogin Success
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 			-------------------welcome to Admin dashboard----------------
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 
+Press 1 for View Rooms		Press 2 for View Users
+Press 3 for Create Rooms		Press 4 for Allot room to user
+Press 5 for view user in a room		Press 6 for delete user
+Press 7 for Add Due Amount		Press 8 for Pay Due Amount
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 
+room num		roomName		roomType
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 
+101		Seshadri		AC
+  [main] INFO  com.hostelMS.App  - 					---------Hostel Management System----------
+  [main] INFO  com.hostelMS.App  - 
+Press 1 for Registeration
+Press 2 for Login
+  [main] INFO  com.hostelMS.App  - welcome to Login
+  [main] INFO  com.hostelMS.App  - Enter username
+  [main] INFO  com.hostelMS.App  - Enter password
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.Version  - HHH000412: Hibernate ORM core version 5.6.11.Final
+  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+  [main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hostelMS]
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, user=root}
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+  [main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3f1ef9d6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+  [main] INFO  com.hostelMS.App  - HelloadminbsLogin Success
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 			-------------------welcome to Admin dashboard----------------
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 
+Press 1 for View Rooms		Press 2 for View Users
+Press 3 for Create Rooms		Press 4 for Allot room to user
+Press 5 for view user in a room		Press 6 for delete user
+Press 7 for Add Due Amount		Press 8 for Pay Due Amount
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 
+User Id		UserName		user Phone		userRoom
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 	1		bhaskara		8501003087		101
+  [main] INFO  com.hostelMS.App  - 					---------Hostel Management System----------
+  [main] INFO  com.hostelMS.App  - 
+Press 1 for Registeration
+Press 2 for Login
+  [main] INFO  com.hostelMS.App  - welcome to Login
+  [main] INFO  com.hostelMS.App  - Enter username
+  [main] INFO  com.hostelMS.App  - Enter password
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.Version  - HHH000412: Hibernate ORM core version 5.6.11.Final
+  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+  [main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hostelMS]
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, user=root}
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+  [main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3f1ef9d6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+  [main] INFO  com.hostelMS.App  - 					---------Hostel Management System----------
+  [main] INFO  com.hostelMS.App  - 
+Press 1 for Registeration
+Press 2 for Login
+  [main] INFO  com.hostelMS.App  - welcome to Login
+  [main] INFO  com.hostelMS.App  - Enter username
+  [main] INFO  com.hostelMS.App  - Enter password
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.Version  - HHH000412: Hibernate ORM core version 5.6.11.Final
+  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+  [main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hostelMS]
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, user=root}
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+  [main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3291b443] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+  [main] INFO  com.hostelMS.App  - HelloadminbsLogin Success
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 			-------------------welcome to Admin dashboard----------------
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 
+Press 1 for View Rooms		Press 2 for View Users
+Press 3 for Create Rooms		Press 4 for Allot room to user
+Press 5 for view user in a room		Press 6 for delete user
+Press 7 for Add Due Amount		Press 8 for Pay Due Amount
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - Enter Room Id
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - Enter Room Name
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - Enter Room Type
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - room added successfully
+  [main] INFO  com.hostelMS.App  - 					---------Hostel Management System----------
+  [main] INFO  com.hostelMS.App  - 
+Press 1 for Registeration
+Press 2 for Login
+  [main] INFO  com.hostelMS.App  - welcome to Login
+  [main] INFO  com.hostelMS.App  - Enter username
+  [main] INFO  com.hostelMS.App  - Enter password
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.Version  - HHH000412: Hibernate ORM core version 5.6.11.Final
+  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+  [main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hostelMS]
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, user=root}
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+  [main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3bd6ba24] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+  [main] INFO  com.hostelMS.App  - HelloadminbsLogin Success
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 			-------------------welcome to Admin dashboard----------------
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 
+Press 1 for View Rooms		Press 2 for View Users
+Press 3 for Create Rooms		Press 4 for Allot room to user
+Press 5 for view user in a room		Press 6 for delete user
+Press 7 for Add Due Amount		Press 8 for Pay Due Amount
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 
+room num		roomName		roomType
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 	101		Seshadri		AC
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 	102		Vrushabhadri		AC
+  [main] INFO  com.hostelMS.App  - 					---------Hostel Management System----------
+  [main] INFO  com.hostelMS.App  - 
+Press 1 for Registeration
+Press 2 for Login
+  [main] INFO  com.hostelMS.App  - welcome to Login
+  [main] INFO  com.hostelMS.App  - Enter username
+  [main] INFO  com.hostelMS.App  - Enter password
+  [main] INFO  com.hostelMS.App  - 					---------Hostel Management System----------
+  [main] INFO  com.hostelMS.App  - 
+Press 1 for Registeration
+Press 2 for Login
+  [main] INFO  com.hostelMS.App  - welcome to Login
+  [main] INFO  com.hostelMS.App  - Enter username
+  [main] INFO  com.hostelMS.App  - Enter password
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.Version  - HHH000412: Hibernate ORM core version 5.6.11.Final
+  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+  [main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hostelMS]
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, user=root}
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+  [main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3f1ef9d6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+  [main] INFO  com.hostelMS.App  - HelloadminbsLogin Success
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 			-------------------welcome to Admin dashboard----------------
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 
+Press 1 for View Rooms		Press 2 for View Users
+Press 3 for Create Rooms		Press 4 for Allot room to user
+Press 5 for view user in a room		Press 6 for delete user
+Press 7 for Add Due Amount		Press 8 for Pay Due Amount
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - Enter user Id
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - Enter room Id
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - Room alloted successfully
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 
+Press 1 for View Rooms		Press 2 for View Users
+Press 3 for Create Rooms		Press 4 for Allot room to user
+Press 5 for view user in a room		Press 6 for delete user
+Press 7 for Add Due Amount		Press 8 for Pay Due Amount
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - Enter user Id
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - Enter room Id
+  [main] INFO  com.hostelMS.App  - 					---------Hostel Management System----------
+  [main] INFO  com.hostelMS.App  - 
+Press 1 for Registeration
+Press 2 for Login
+  [main] INFO  com.hostelMS.App  - welcome to Login
+  [main] INFO  com.hostelMS.App  - Enter username
+  [main] INFO  com.hostelMS.App  - Enter password
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.Version  - HHH000412: Hibernate ORM core version 5.6.11.Final
+  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+  [main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hostelMS]
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, user=root}
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+  [main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@44ed0a8f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+  [main] INFO  com.hostelMS.App  - HelloadminbsLogin Success
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 			-------------------welcome to Admin dashboard----------------
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 
+Press 1 for View Rooms		Press 2 for View Users
+Press 3 for Create Rooms		Press 4 for Allot room to user
+Press 5 for view user in a room		Press 6 for delete user
+Press 7 for Add Due Amount		Press 8 for Pay Due Amount
+  [main] ERROR org.hibernate.hql.internal.ast.ErrorTracker  - line 1:36: unexpected token: userRole
+  [main] ERROR org.hibernate.hql.internal.ast.ErrorTracker  - line 1:36: unexpected token: userRole
+  line 1:36: unexpected token: userRole
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.primaryExpression(HqlBaseParser.java:1119)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.atom(HqlBaseParser.java:3960)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.unaryExpression(HqlBaseParser.java:3891)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.multiplyExpression(HqlBaseParser.java:3767)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.additiveExpression(HqlBaseParser.java:3393)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.concatenation(HqlBaseParser.java:682)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.relationalExpression(HqlBaseParser.java:2998)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.equalityExpression(HqlBaseParser.java:2824)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.negatedExpression(HqlBaseParser.java:2783)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalAndExpression(HqlBaseParser.java:2693)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalOrExpression(HqlBaseParser.java:2653)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.expression(HqlBaseParser.java:2331)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalExpression(HqlBaseParser.java:2079)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.whereClause(HqlBaseParser.java:540)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.queryRule(HqlBaseParser.java:831)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.selectStatement(HqlBaseParser.java:336)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:200)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:294)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:162)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:636)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:748)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:114)
+	at com.hostelMS.daoImpl.adminDaoImpl.viewUsers(adminDaoImpl.java:37)
+	at com.hostelMS.serviceImpl.admindashboardImpl.viewUsers(admindashboardImpl.java:56)
+	at com.hostelMS.serviceImpl.admindashboardImpl.dashboard(admindashboardImpl.java:34)
+	at com.hostelMS.serviceImpl.loginregisterimpl.login(loginregisterimpl.java:79)
+	at com.hostelMS.App.main(App.java:28)
+[main] WARN  org.hibernate.hql.internal.ast.HqlParser  - HHH000203: processEqualityExpression() : No expression to process!
+  [main] ERROR org.hibernate.hql.internal.ast.ErrorTracker  - line 1:45: unexpected token: student
+  [main] ERROR org.hibernate.hql.internal.ast.ErrorTracker  - line 1:45: unexpected token: student
+  line 1:45: unexpected token: student
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.queryRule(HqlBaseParser.java:864)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.selectStatement(HqlBaseParser.java:336)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:200)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:294)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:162)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:636)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:748)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:114)
+	at com.hostelMS.daoImpl.adminDaoImpl.viewUsers(adminDaoImpl.java:37)
+	at com.hostelMS.serviceImpl.admindashboardImpl.viewUsers(admindashboardImpl.java:56)
+	at com.hostelMS.serviceImpl.admindashboardImpl.dashboard(admindashboardImpl.java:34)
+	at com.hostelMS.serviceImpl.loginregisterimpl.login(loginregisterimpl.java:79)
+	at com.hostelMS.App.main(App.java:28)
+[main] INFO  com.hostelMS.App  - 					---------Hostel Management System----------
+  [main] INFO  com.hostelMS.App  - 
+Press 1 for Registeration
+Press 2 for Login
+  [main] INFO  com.hostelMS.App  - welcome to Login
+  [main] INFO  com.hostelMS.App  - Enter username
+  [main] INFO  com.hostelMS.App  - Enter password
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.Version  - HHH000412: Hibernate ORM core version 5.6.11.Final
+  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+  [main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hostelMS]
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, user=root}
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+  [main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@67064bdc] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+  [main] INFO  com.hostelMS.App  - HelloadminbsLogin Success
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 			-------------------welcome to Admin dashboard----------------
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 
+Press 1 for View Rooms		Press 2 for View Users
+Press 3 for Create Rooms		Press 4 for Allot room to user
+Press 5 for view user in a room		Press 6 for delete user
+Press 7 for Add Due Amount		Press 8 for Pay Due Amount
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 
+User Id		UserName		user Phone		userRoom
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 	1		bhaskara		8501003087		101
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 	2		bach		9059065724		102
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 	3		anudip		9876543210		101
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 
+Press 1 for View Rooms		Press 2 for View Users
+Press 3 for Create Rooms		Press 4 for Allot room to user
+Press 5 for view user in a room		Press 6 for delete user
+Press 7 for Add Due Amount		Press 8 for Pay Due Amount
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - Enter Room Id
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 
+User Id		UserName		user Phone
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 	1		bhaskara		8501003087
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 	3		anudip		9876543210
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 
+Press 1 for View Rooms		Press 2 for View Users
+Press 3 for Create Rooms		Press 4 for Allot room to user
+Press 5 for view user in a room		Press 6 for delete user
+Press 7 for Add Due Amount		Press 8 for Pay Due Amount
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - Enter Amount to add
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - Enter user Id
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - amount added
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 
+Press 1 for View Rooms		Press 2 for View Users
+Press 3 for Create Rooms		Press 4 for Allot room to user
+Press 5 for view user in a room		Press 6 for delete user
+Press 7 for Add Due Amount		Press 8 for Pay Due Amount
+  [main] INFO  com.hostelMS.App  - 					---------Hostel Management System----------
+  [main] INFO  com.hostelMS.App  - 
+Press 1 for Registeration
+Press 2 for Login
+  [main] INFO  com.hostelMS.App  - welcome to Login
+  [main] INFO  com.hostelMS.App  - Enter username
+  [main] INFO  com.hostelMS.App  - Enter password
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.Version  - HHH000412: Hibernate ORM core version 5.6.11.Final
+  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+  [main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hostelMS]
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, user=root}
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+  [main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3f1ef9d6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+  [main] INFO  com.hostelMS.App  - HelloadminbsLogin Success
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 			-------------------welcome to Admin dashboard----------------
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 
+	Press 1 for View Rooms		Press 2 for View Users
+Press 3 for Create Rooms		Press 4 for Allot room to user
+Press 5 for view user in a room		Press 6 for view user profile
+Press 7 for Add Due Amount		Press 8 for Pay Due Amount		Press 9 for delete user
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - Enter user id
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - user(userId=2, userName=bach, userPhone=9059065724, userPassword=bhaskara@007, userAddress=tirupati, userRole=student, userFee=5000, userRoom=room(roomId=102, roomName=Vrushabhadri, roomType=AC))
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 
+	Press 1 for View Rooms		Press 2 for View Users
+Press 3 for Create Rooms		Press 4 for Allot room to user
+Press 5 for view user in a room		Press 6 for view user profile
+Press 7 for Add Due Amount		Press 8 for Pay Due Amount		Press 9 for delete user
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - Enter Amount to pay
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - Enter user Id
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - amount added
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 
+	Press 1 for View Rooms		Press 2 for View Users
+Press 3 for Create Rooms		Press 4 for Allot room to user
+Press 5 for view user in a room		Press 6 for view user profile
+Press 7 for Add Due Amount		Press 8 for Pay Due Amount		Press 9 for delete user
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - Enter user id
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - user(userId=2, userName=bach, userPhone=9059065724, userPassword=bhaskara@007, userAddress=tirupati, userRole=student, userFee=2000, userRoom=room(roomId=102, roomName=Vrushabhadri, roomType=AC))
+  [main] INFO  com.hostelMS.serviceImpl.admindashboardImpl  - 
+	Press 1 for View Rooms		Press 2 for View Users
+Press 3 for Create Rooms		Press 4 for Allot room to user
+Press 5 for view user in a room		Press 6 for view user profile
+Press 7 for Add Due Amount		Press 8 for Pay Due Amount		Press 9 for delete user
   
