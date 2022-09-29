@@ -1,0 +1,33 @@
+[main] INFO  com.hostelMS.App  - 					---------Hostel Management System----------
+  [main] INFO  com.hostelMS.App  - 
+Press 1 for Registeration
+Press 2 for Login
+  [main] INFO  com.hostelMS.App  - welcome to Login
+  [main] INFO  com.hostelMS.App  - Enter username
+  [main] INFO  com.hostelMS.App  - Enter password
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.Version  - HHH000412: Hibernate ORM core version 5.6.11.Final
+  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+  [main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hostelMS]
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, user=root}
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+  [main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3f1ef9d6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+  [main] INFO  com.hostelMS.App  - HellobhaskaraLogin Success
+  [main] INFO  com.hostelMS.serviceImpl.userdashboardImpl  - 			---------------------Welcome to userdashboard----------------------
+  [main] INFO  com.hostelMS.serviceImpl.userdashboardImpl  - 
+Press 1 for viewRoom
+Press 2 for view dueAmount 
+Press 3 for view profile
+Press 4 for Update Phone number 
+Press 5 for Change password
+  [main] INFO  com.hostelMS.serviceImpl.userdashboardImpl  - Hello bhaskara your room number is101 room name is Seshadri and it is AC room
+  [main] INFO  com.hostelMS.serviceImpl.userdashboardImpl  - 
+Press 1 for viewRoom
+Press 2 for view dueAmount 
+Press 3 for view profile
+Press 4 for Update Phone number 
+Press 5 for Change password
+  
