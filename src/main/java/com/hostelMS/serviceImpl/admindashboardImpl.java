@@ -63,7 +63,7 @@ public class admindashboardImpl implements admindashboard {
 	}
 
 	@Override
-	public void createRoom() throws GlobalException {
+	public void createRoom()  {
 		log.info("Enter Room Id");
 		int id=bs.nextInt();
 		log.info("Enter Room Name");
@@ -74,12 +74,16 @@ public class admindashboardImpl implements admindashboard {
 		r1.setRoomId(id);
 		r1.setRoomName(rname);
 		r1.setRoomType(rtype);
-		
-		int st=dao.createRoom(r1);
-		
-		if(st==1) {
-			log.info("room added successfully");
+		try {
+			int st=dao.createRoom(r1);
+			if(st==1) {
+				log.info("room added successfully");
+			}
 		}
+		catch(Exception e) {
+			log.info(e.getMessage());
+		}
+		
 		
 	}
 
