@@ -1,7 +1,13 @@
 package com.hostelMS.serviceImpl;
 
 import java.util.Scanner;
+import java.util.Set;
 import java.util.regex.Pattern;
+
+import javax.validation.ConstraintViolation;
+import javax.validation.Validation;
+import javax.validation.Validator;
+import javax.validation.ValidatorFactory;
 
 import org.apache.log4j.Logger;
 
@@ -39,12 +45,20 @@ public class loginregisterimpl implements loginregister {
 		u1.setUserRole("student");
 		u1.setUserRoom(null);
 		u1.setUserFee(0);
-		//regular expressions to check data correctness
-		if(Pattern.matches("[a-zA-Z]{4,}", uname)&&Pattern.matches("[a-zA-Z0-9@#]{6,}",upwd)&&Pattern.matches("[0-9]{10}", uphone))
+		
+		ValidatorFactory vf= Validation.buildDefaultValidatorFactory();
+		Validator valid=vf.getValidator();
+		
+		Set<ConstraintViolation<user>> violations=	valid.validate(u1);
+		
+		if(violations.size()>0)
 		{
-			//saving the user details
-			int status=dao.registration(u1);
-			//log.info(status);
+			for(ConstraintViolation<user> violate:violations)
+				log.info(violate.getMessage());
+		}
+		else {
+		int status=dao.registration(u1);
+			
 			if(status==1) {
 				log.info("Registration success");
 			}
@@ -52,10 +66,8 @@ public class loginregisterimpl implements loginregister {
 				throw new GlobalException("Something went wrong");
 			}
 		}
-		else {
-			throw new GlobalException("Invalid data");
-		}
-}
+	}
+	
 
 	public void login()throws GlobalException {
 		log.info("welcome to Login");
